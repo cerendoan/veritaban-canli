@@ -1,0 +1,14 @@
+const database = 'mekanbul';
+use(database);
+db.venues.updateOne({"name":"Açık Hava Amfisi"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Deniz",
+      "rating": 5,
+      "text": "Doğa ile iç içe harika bir ortam. Konserler ve etkinlikler için mükemmel.",
+      "date": new Date()
+    }
+  }
+}
+)

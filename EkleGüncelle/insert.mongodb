@@ -1,0 +1,25 @@
+const database = 'mekanbul';
+use(database);
+db.venues.insertOne(
+{
+  "name": "Açık Hava Amfisi",
+  "address": "Süleyman Demirel Üniversitesi Açık Alan",
+  "rating": 5,
+  "foodanddrink": [
+    "su"
+  ],
+  "coordinates": [
+    37.83226584629666,
+    30.524732239878013
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Pazar",
+      "open": "00:00",
+      "close": "23:59",
+      "isClosed": false
+    }
+   
+  ]
+}
+ );
